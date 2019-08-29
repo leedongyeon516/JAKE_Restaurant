@@ -18,6 +18,8 @@
       </div>
 
       <nav class="menu">
+        <div class="menu-showcase"></div>
+
         <ul class="menu-nav">
           <li class="nav-item nav-item-1">
             <a href="#story" class="nav-link home">
@@ -193,8 +195,8 @@
               <br />
               <p class="card-theme modified-card-theme-1">Business Hours</p>
               <br />
-              <p class="card-p">SUN. MON. TUES. WED.<br />6 PM - MIDNIGHT</p>
-              <p class="card-p">FRI. SAT.<br />6 PM - 2 AM</p>
+              <p class="card-p">SUN. MON. TUES. WED.<br />11 AM - 10 PM</p>
+              <p class="card-p">FRI. SAT.<br />11 AM - MIDNIGHT</p>
             </div>
             <div class="modified-card-img" id="image-2"></div>
           </div>
@@ -202,39 +204,74 @@
       </div>
 
       <div id="gallery">
+        <div class="gallery-container">
+          <div
+            class="gallery-card gallery-section card-content modified-card-content-2"
+          >
+            <p class="card-theme modified-card-theme-1">Gallery</p>
+            <p class="card-p">Pictures</p>
+          </div>
+          <div class="gallery-showcase">
+            <div class="focused-img">
+              <img src="images/Restaruant1.jpg" id="focused" />
+            </div>
+            <div class="images">
+              <img src="images/Restaruant1.jpg" />
+              <img src="images/Restaruant1.jpg" />
+              <img src="images/Restaruant1.jpg" />
+              <img src="images/Restaruant1.jpg" />
+              <img src="images/Restaruant1.jpg" />
+              <img src="images/Restaruant1.jpg" />
+            </div>
+          </div>
+        </div>
+        <!--<p class="card-theme modified-card-theme-1">Gallery</p>
+        <div class="gallery-container">
+          <div class="gallery-image" id="gallery-image-1"></div>
+          <div class="gallery-image" id="gallery-image-2"></div>
+          <div class="gallery-image" id="gallery-image-3"></div>
+          <div class="gallery-image" id="gallery-image-4"></div>
+          <div class="gallery-image" id="gallery-image-5"></div>
+          <div class="gallery-image" id="gallery-image-6"></div>
+          <div class="gallery-image" id="gallery-image-7"></div>
+          <div class="gallery-image" id="gallery-image-8"></div>
+          <div class="gallery-image" id="gallery-image-9"></div>
+        </div>
         <div class="gallery-section">
           <p class="card-theme modified-card-theme-1">Gallery</p>
           <div class="gallery-section-line"></div>
           <div class="inner-width">
-            <div class="border"></div>
             <div class="gallery">
-              <a class="image">
+              <a class="image" id="gallery-image-1">
                 <img src="images/Restaruant1.jpg" />
               </a>
-              <a class="image">
-                <img src="images/Restaurant2.jpg" />
+              <a class="image" id="gallery-image-2">
+                <img src="images/Restaruant1.jpg" />
               </a>
-              <a class="image">
-                <img src="images/Restaurant5.jpeg" />
+              <a class="image" id="gallery-image-3">
+                <img src="images/Restaruant1.jpg" />
               </a>
-              <a class="image">
-                <img src="images/Restaurant7.jpeg" />
+              <a class="image" id="gallery-image-4">
+                <img src="images/Restaruant1.jpg" />
               </a>
-              <a class="image">
-                <img src="images/Restaurant8.jpeg" />
+              <a class="image" id="gallery-image-5">
+                <img src="images/Restaruant1.jpg" />
               </a>
-              <a class="image">
-                <img src="images/Restaurant9.jpeg" />
+              <a class="image" id="gallery-image-6">
+                <img src="images/Restaruant1.jpg" />
               </a>
-              <a class="image">
-                <img src="images/Food1.jpg" />
+              <a class="image" id="gallery-image-7">
+                <img src="images/Restaruant1.jpg" />
               </a>
-              <a class="image">
-                <img src="images/Food2.jpg" />
+              <a class="image" id="gallery-image-8">
+                <img src="images/Restaruant1.jpg" />
+              </a>
+              <a class="image" id="gallery-image-9">
+                <img src="images/Restaruant1.jpg" />
               </a>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
 
       <div id="contact">
@@ -242,43 +279,54 @@
           <div class="card-3">
             <div class="card-img modified-card-img-1 form-outer"></div>
             <form class="contact-form">
-              <div class="form">
+              <!--<div class="form">
                 <input type="text" name="name" autocomplete="off" required />
                 <label for="name" class="label">
                   <span class="content">Name</span>
                 </label>
-              </div>
+              </div>-->
               <div class="form">
-                <input type="email" name="email" autocomplete="off" required />
+                <input type="text" name="email" autocomplete="off" required />
                 <label for="email" class="label">
                   <span class="content">Email</span>
                 </label>
               </div>
               <div class="form">
-                <input type="text" name="mobile" autocomplete="off" required />
-                <label for="mobile" class="label">
+                <input type="tel" name="tel" autocomplete="off" required />
+                <label for="tel" class="label">
                   <span class="content">Mobile</span>
                 </label>
               </div>
               <div class="form">
-                <input type="text" name="message" autocomplete="off" required />
-                <label for="message" class="label">
-                  <span class="content">Message</span>
+                <input type="text" name="subject" autocomplete="off" required />
+                <label for="subject" class="label">
+                  <span class="content">Subject</span>
                 </label>
               </div>
+              <div class="form">
+                <textarea
+                  name="message"
+                  rows="3"
+                  maxlength="180"
+                  required
+                ></textarea>
+              </div>
+              <!--<div class="form">
+                <button type="submit" class="submit-form-btn">Submit</button>
+              </div>-->
             </form>
             <div class="card-content modified-card-content-2 form-outer">
               <br />
               <p class="card-theme modified-card-theme-1">Contact Us</p>
               <br />
-              <p class="contact-msg">
+              <p class="contact-form-msg">
                 We do want to hear from You.
               </p>
               <br />
               <div class="contact-form-line">
                 <br />
                 <p class="card-p more-info">
-                  1 Toronto St. ON<br />JAKE LEE<br />647. 901. 7225.<br />leedongyeon516@gmail.com
+                  1 Toronto St. ON<br />JAKE LEE<br />leedongyeon516@gmail.com
                 </p>
                 <a class="contact-form-btn">Message</a>
               </div>

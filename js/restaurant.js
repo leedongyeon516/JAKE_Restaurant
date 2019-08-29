@@ -55,7 +55,7 @@ const next = document.querySelector("#next");
 //const stopBtn1 = document.querySelector("#stop-btn-1");
 //const stopBtn2 = document.querySelector("#stop-btn-2");
 let automatic = true;
-const interval = 5000;
+const interval = 3000;
 let slideInterval;
 
 /*
@@ -127,16 +127,19 @@ if (automatic) {
 const contactFormBtn = document.querySelector(".contact-form-btn");
 const contactFormLine = document.querySelector(".contact-form-line");
 const moreInfo = document.querySelector(".more-info");
+const contactFormMsg = document.querySelector(".contact-form-msg");
 const leftImage = document.querySelector(".modified-card-img-1");
 const contactForm = document.querySelector(".contact-form");
 
-contactFormBtn.addEventListener("click", changeLineShape);
+contactFormBtn.addEventListener("click", openContactForm);
 
-function changeLineShape() {
+function openContactForm() {
   if (contactFormBtn.innerHTML === "Message") {
-    contactFormBtn.innerHTML = "Submit";
+    contactFormBtn.innerHTML = "Back";
+    contactFormMsg.innerHTML = "Send us your Message.";
   } else {
     contactFormBtn.innerHTML = "Message";
+    contactFormMsg.innerHTML = "We do want to hear from You.";
   }
 
   contactFormLine.classList.toggle("change");
@@ -156,3 +159,25 @@ function changeBgColor() {
 }
 
 window.addEventListener("scroll", changeBgColor);
+
+const focused = document.querySelector("#focused");
+const images = document.querySelectorAll(".images img");
+const opacity = 1;
+
+for (let i = 1; i < images.length; i++) {
+  images[i].style.opacity = 0.5;
+}
+
+images.forEach(img => img.addEventListener("click", imgFocused));
+
+function imgFocused(e) {
+  images.forEach(img => (img.style.opacity = 0.5));
+
+  focused.src = e.target.src;
+
+  focused.classList.add("fade-in");
+
+  setTimeout(() => focused.classList.remove("fade-in"), 500);
+
+  e.target.style.opacity = opacity;
+}

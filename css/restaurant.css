@@ -43,6 +43,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  display: flex;
   opacity: 0.9;
   visibility: hidden;
   z-index: 101;
@@ -52,9 +53,15 @@ header {
   visibility: visible;
 }
 
-.menu-showcase,
+.menu-showcase {
+  width: 50%;
+  height: 100vh;
+  transform: translateX(100%);
+  background: transparent;
+  overflow: hidden;
+}
+
 .menu-nav {
-  display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
@@ -225,7 +232,8 @@ ul li a:hover::before {
 }
 
 #image-2 {
-  background-image: url("../images/Restaurant2.jpg");
+  background-image: url("../images/Restaruant1.jpg");
+  filter: grayscale(100%);
 }
 
 .card-img {
@@ -332,7 +340,7 @@ ul li a:hover::before {
 
 /*Landing Style 2*/
 .modified-card-content-1 {
-  background: #222;
+  background: black;
 }
 
 .modified-card-theme-1 {
@@ -481,10 +489,56 @@ ul li a:hover::before {
   font-size: 1.2rem;
 }
 
+/**/
+.gallery-container {
+  line-height: 0;
+  display: flex;
+  margin: auto;
+}
+
+.gallery-card {
+  width: 30%;
+  padding-top: 200px;
+  justify-content: center;
+}
+
+.gallery-card p {
+  color: black;
+  padding-top: 4rem;
+}
+
+.gallery-showcase {
+  background: #f4f4f4;
+  width: 70%;
+  margin: auto;
+}
+
+.focused-img img,
+.images img {
+  width: 100%;
+}
+
+.images {
+  filter: grayscale(100);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.7s ease-in-out 1 forwards;
+}
+
 /*Landing Style 4*/
 .modified-card-content-2 {
   width: 40%;
-  background: #eca6a1;
+  background: lightblue;
 }
 
 .modified-card-content-2:hover {
@@ -534,13 +588,12 @@ ul li a:hover::before {
   transition: 1s ease-in-out;
 }
 
-.contact-msg {
+.contact-form-msg {
   font-family: "Shadows Into light", cursive;
 }
 
-.contact-form-btn,
-.submit-btn {
-  font-family: "Shadows Into Light", cursive;
+.contact-form-btn {
+  font-family: "Permanent Marker", cursive;
   padding: 0.3rem 1.7rem;
   border: 1px #444 solid;
   display: inline-block;
@@ -557,7 +610,28 @@ ul li a:hover::before {
   transition: 1.3s ease-in-out;
 }
 
+.submit-form-btn {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+  background: #444;
+  padding: 0.3rem 1.7rem;
+  border: none;
+  border: #444 solid 1px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.submit-form-btn:hover {
+  color: #444;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+}
+
 .more-info {
+  color: #555;
   display: none;
 }
 
@@ -566,28 +640,18 @@ ul li a:hover::before {
   transition: 1.3s ease-in-out;
 }
 
-/**/
 .gallery-section {
-  width: 100%;
-  height: 100%;
-  background: black;
-  padding: 100px 0;
-  text-align: center;
+  background: #333;
   transition: 1.3s ease-in-out;
 }
 
+/*
 .inner-width {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
   padding-bottom: 10px;
-}
-
-.border {
-  width: 180px;
-  height: 40px;
-  margin: 20px auto;
 }
 
 .gallery-section .gallery {
@@ -597,7 +661,6 @@ ul li a:hover::before {
 }
 
 .gallery-section .image {
-  padding: 5px;
   flex: 25%;
   overflow: hidden;
 }
@@ -607,15 +670,72 @@ ul li a:hover::before {
   height: 100%;
   object-fit: cover;
   transition: 0.4s;
+  filter: grayscale(100%);
 }
 
 .gallery-section .image:hover img {
-  transform: rotate(5deg);
-}
+  filter: grayscale(0);
+}*/
 
 .gallery-section.color-active {
-  background: #fff;
+  background: lightgray;
   transition: 1.3s ease-in-out;
+}
+
+/*
+.gallery-section p {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.gallery-container {
+  color: white;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.gallery-container > div {
+  background: black;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gallery-image-1 {
+  background: url("../images/Restaruant1.jpg");
+}
+
+/*
+#gallery-image-1 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+/*6
+#gallery-image-3 {
+  grid-row: span 2;
+}
+
+#gallery-image-9 {
+  display: none;
+}
+
+/*3
+#gallery-image-2 {
+  grid-column: span 2;
+}
+
+#gallery-image-7 {
+  grid-row: span 2;
+}
+
+#gallery-image-8 {
+  grid-row: span 2;
 }
 
 /**/
@@ -640,7 +760,7 @@ ul li a:hover::before {
 }
 
 .form input {
-  width: 100%;
+  width: 50%;
   height: 100%;
   padding-top: 20px;
   border: none;
@@ -664,7 +784,7 @@ ul li a:hover::before {
   height: 100%;
   bottom: -1px;
   left: 0px;
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid darkorange;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
 }
@@ -678,7 +798,7 @@ ul li a:hover::before {
 
 .form input:focus + .label .content,
 .form input:valid + .label .content {
-  color: orange;
+  color: darkorange;
   transform: translateY(-100%);
 }
 
@@ -687,10 +807,20 @@ ul li a:hover::before {
   transform: translateX(0%);
 }
 
+textarea {
+  width: 50%;
+  border: none;
+  border-style: none;
+  outline: none;
+  border: black solid 1px;
+  resize: none;
+  overflow: hidden;
+}
+
 footer {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.7rem;
-  background: #fff;
+  background: #f4f4f4;
   text-align: right;
   padding: 25px;
 }
