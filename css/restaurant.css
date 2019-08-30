@@ -146,7 +146,7 @@ ul li {
 
 ul li a {
   font-family: "Amatic SC", cursive;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: bolder;
   color: black;
   position: relative;
@@ -232,8 +232,7 @@ ul li a:hover::before {
 }
 
 #image-2 {
-  background-image: url("../images/Restaruant1.jpg");
-  filter: grayscale(100%);
+  background-image: url("../images/Restaurant5.jpeg");
 }
 
 .card-img {
@@ -286,7 +285,7 @@ ul li a:hover::before {
 }
 
 .card-link {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Cinzel", serif;
   color: black;
   font-size: 0.7rem;
   margin-bottom: 7px;
@@ -309,8 +308,8 @@ ul li a:hover::before {
 }
 
 .menu-container {
-  font-family: "Amatic SC", cursive;
-  font-size: 1.15rem;
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
   padding: 50px;
   margin: 7px;
   border: black solid 3px;
@@ -508,7 +507,7 @@ ul li a:hover::before {
 }
 
 .gallery-showcase {
-  background: #f4f4f4;
+  background: lightgray;
   width: 70%;
   margin: auto;
 }
@@ -519,7 +518,6 @@ ul li a:hover::before {
 }
 
 .images {
-  filter: grayscale(100);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -593,7 +591,7 @@ ul li a:hover::before {
 }
 
 .contact-form-btn {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Cinzel", serif;
   padding: 0.3rem 1.7rem;
   border: 1px #444 solid;
   display: inline-block;
@@ -611,7 +609,7 @@ ul li a:hover::before {
 }
 
 .submit-form-btn {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Cinzel", serif;
   font-size: 1rem;
   line-height: 1.6;
   color: #fff;
@@ -740,7 +738,7 @@ ul li a:hover::before {
 
 /**/
 .form {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Cinzel", serif;
   height: 50px;
   top: 20%;
   left: 50%;
@@ -1010,7 +1008,6 @@ footer {
 
   .slider-inner .content {
     width: 180px;
-    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .slider-inner .card-theme {
@@ -1073,6 +1070,7 @@ footer {
 
   .parallax h2 {
     padding-top: 70px;
+    background-attachment: none;
   }
 }
 

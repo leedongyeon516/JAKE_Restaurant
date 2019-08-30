@@ -41,10 +41,10 @@ function toggleDisplay() {
 }
 
 function toggleOption() {
-  if (cardLink1.innerHTML === "Find Out More") {
-    cardLink1.innerHTML = "Read Less";
+  if (cardLink1.innerHTML === "Find out more") {
+    cardLink1.innerHTML = "Read less";
   } else {
-    cardLink1.innerHTML = "Find Out More";
+    cardLink1.innerHTML = "Find out more";
   }
 }
 
@@ -165,13 +165,13 @@ const images = document.querySelectorAll(".images img");
 const opacity = 1;
 
 for (let i = 1; i < images.length; i++) {
-  images[i].style.opacity = 0.5;
+  images[i].style.opacity = 0.2;
 }
 
 images.forEach(img => img.addEventListener("click", imgFocused));
 
 function imgFocused(e) {
-  images.forEach(img => (img.style.opacity = 0.5));
+  images.forEach(img => (img.style.opacity = 0.2));
 
   focused.src = e.target.src;
 
