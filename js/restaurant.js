@@ -134,11 +134,11 @@ const contactForm = document.querySelector(".contact-form");
 contactFormBtn.addEventListener("click", openContactForm);
 
 function openContactForm() {
-  if (contactFormBtn.innerHTML === "Message") {
+  if (contactFormBtn.innerHTML === "Next") {
     contactFormBtn.innerHTML = "Back";
     contactFormMsg.innerHTML = "Send us your Message.";
   } else {
-    contactFormBtn.innerHTML = "Message";
+    contactFormBtn.innerHTML = "Next";
     contactFormMsg.innerHTML = "We do want to hear from You.";
   }
 
