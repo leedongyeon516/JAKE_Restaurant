@@ -1068,9 +1068,13 @@ footer {
     display: none;
   }
 
+  .parallax {
+    object-fit: cover;
+    background-attachment: none;
+  }
+
   .parallax h2 {
     padding-top: 70px;
-    background-attachment: none;
   }
 }
 
