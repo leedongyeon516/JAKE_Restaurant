@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/restaurant.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cinzel|Rock+Salt|Satisfy|Shadows+Into+Light|Permanent+Marker|Poppins|Amatic+SC&display=swap"
+    />
+    <script src="js/formValidation.js"></script>
+    <style media="screen">
+      .example-form_after .form-group .validation-error {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 0.7rem;
+        color: orange;
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+
+    <title>JAKE's Restaurant</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="menu-btn-line">MENU</div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-showcase"></div>
+
+        <ul class="menu-nav">
+          <li class="nav-item nav-item-1">
+            <a href="#story" class="nav-link home">
+              Story
+            </a>
+          </li>
+          <li class="nav-item nav-item-2">
+            <a href="#menus" class="nav-link">
+              Menus
+            </a>
+          </li>
+          <li class="nav-item nav-item-3">
+            <a href="#hours" class="nav-link">
+              Hours
+            </a>
+          </li>
+          <li class="nav-item nav-item-4">
+            <a href="#gallery" class="nav-link">
+              Gallery
+            </a>
+          </li>
+          <li class="nav-item nav-item-5">
+            <a href="#contact" class="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <nav class="nav-bar">
+        <ul class="nav-bar-inner">
+          <li><a href="#story" class="style-1">Story</a></li>
+          <li><a href="#menus" class="style-2">Menus</a></li>
+          <li><a href="#hours" class="style-3">Hours</a></li>
+          <li><a href="#gallery" class="style-4">Gallery</a></li>
+          <li><a href="#contact" class="style-5">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div id="story">
+        <div class="slider">
+          <div class="slider-inner slide-1 active">
+            <div class="content">
+              <h1 class="card-theme">Stunning Ambiance</h1>
+              <h2 class="card-header">1 <span>| 5</span></h2>
+              <p class="card-p">The World's Best Restaurant of 2019</p>
+            </div>
+          </div>
+          <div class="slider-inner slide-2">
+            <div class="content">
+              <h1 class="card-theme">Cozy Interior</h1>
+              <h2 class="card-header">2 <span>| 5</span></h2>
+              <p class="card-p">The World's Best Restaurant of 2019</p>
+            </div>
+          </div>
+          <div class="slider-inner slide-3">
+            <div class="content">
+              <h1 class="card-theme">Amazing Chefs</h1>
+              <h2 class="card-header">3 <span>| 5</span></h2>
+              <p class="card-p">The World's Best Restaurant of 2019</p>
+            </div>
+          </div>
+          <div class="slider-inner slide-4">
+            <div class="content">
+              <h1 class="card-theme">Delicious Food</h1>
+              <h2 class="card-header">4 <span>| 5</span></h2>
+              <p class="card-p">The World's Best Restaurant of 2019</p>
+            </div>
+          </div>
+          <div class="slider-inner slide-5">
+            <div class="content">
+              <h1 class="card-theme">Sparkling Kitchen</h1>
+              <h2 class="card-header">5 <span>| 5</span></h2>
+              <p class="card-p">The World's Best Restaurant of 2019</p>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <div id="prev"></div>
+            <div id="next"></div>
+            <!--<div class="stop-btn">
+              <div id="stop-btn-1"></div>
+              <div id="stop-btn-2"></div>
+            </div>-->
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="parallax">
+            <h2 class="card-theme modified-card-theme-1">Our Story</h2>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              rem ab accusantium, odit quisquam consectetur quos enim ut natus
+              voluptatum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="menus">
+        <div class="slide">
+          <div class="card-1">
+            <div class="card-img" id="image-1"></div>
+            <div class="card-content">
+              <br />
+              <p class="card-theme modified-card-theme-1">Signiture Dish</p>
+              <br />
+              <p class="modified-card-p-1">Lorem ipsum dolor.</p>
+              <a class="card-link card-link-1">Find out more</a>
+              <p class="more-content more-content-1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi distinctio totam molestias odio. Voluptatum libero
+                officiis eius eveniet.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-container">
+          <div class="menu-item-appetizer">
+            <h3>Appetizers</h3>
+            <br />
+            <p>Roasted Oyster</p>
+            <h5>Kale, Chile, Grana Padano. | 27.</h5>
+            <br />
+            <p>Cherry Tomato Salad</p>
+            <h5>Grilled Romano Beans, Kohlrabi, Sesame. | 22.</h5>
+            <br />
+            <p>Wagyu Pastrami</p>
+            <h5>Pickled Vegetables, Grilled Bread. | 20.</h5>
+          </div>
+          <div class="menu-item-entree">
+            <h3>Entrees</h3>
+            <br />
+            <p>Fisherman's Stew</p>
+            <h5>Chorizo, Summer Squash, Carolina Gold Rice. | 35.</h5>
+            <br />
+            <p>Brick-Pressed Half Chicken</p>
+            <h5>Potato, Radish, Fresno Pepper Sauce. | 37.</h5>
+            <br />
+            <p>Special Burger</p>
+            <h5>Cheddar, Bacon, Chips. | 32.</h5>
+          </div>
+          <div class="menu-item-dessert">
+            <h3>Dessert</h3>
+            <br />
+            <p>Ricotta Donuts</p>
+            <h5>Sour Cherry Jam, Tarragon, Quark Cream. | 15.</h5>
+            <br />
+            <p>Chocolate Pudding Cake</p>
+            <h5>Sweet Cream, Coconut, Pecan Ice Cream. | 16.</h5>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="parallax">
+            <h2 class="card-theme modified-card-theme-1">Our Way</h2>
+            <br />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur, natus quisquam, voluptates temporibus corrupti qui,
+              quidem nesciunt officiis sapiente autem.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="hours">
+        <div class="slide">
+          <div class="card-2">
+            <div class="card-content modified-card-content-1">
+              <br />
+              <p class="card-theme modified-card-theme-1">Business Hours</p>
+              <br />
+              <p class="card-p">SUN. MON. TUES. WED.<br />11 AM - 10 PM</p>
+              <p class="card-p">FRI. SAT.<br />11 AM - MIDNIGHT</p>
+            </div>
+            <div class="modified-card-img" id="image-2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="gallery">
+        <div class="gallery-container">
+          <div
+            class="gallery-card gallery-section card-content modified-card-content-2"
+          >
+            <p class="card-theme modified-card-theme-1">Gallery</p>
+            <p class="card-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium, facilis.
+            </p>
+          </div>
+          <div class="gallery-showcase gallery-section">
+            <div class="focused-img">
+              <img src="images/Gallery3.jpeg" id="focused" />
+            </div>
+            <div class="images">
+              <img src="images/Gallery3.jpeg" />
+              <img src="images/Food1.jpg" />
+              <img src="images/Gallery1.jpeg" />
+              <img src="images/Food2.jpg" />
+              <img src="images/Chef.jpg" />
+              <img src="images/Gallery2.jpeg" />
+            </div>
+          </div>
+        </div>
+        <!--<p class="card-theme modified-card-theme-1">Gallery</p>
+        <div class="gallery-container">
+          <div class="gallery-image" id="gallery-image-1"></div>
+          <div class="gallery-image" id="gallery-image-2"></div>
+          <div class="gallery-image" id="gallery-image-3"></div>
+          <div class="gallery-image" id="gallery-image-4"></div>
+          <div class="gallery-image" id="gallery-image-5"></div>
+          <div class="gallery-image" id="gallery-image-6"></div>
+          <div class="gallery-image" id="gallery-image-7"></div>
+          <div class="gallery-image" id="gallery-image-8"></div>
+          <div class="gallery-image" id="gallery-image-9"></div>
+        </div>
+        <div class="gallery-section">
+          <p class="card-theme modified-card-theme-1">Gallery</p>
+          <div class="gallery-section-line"></div>
+          <div class="inner-width">
+            <div class="gallery">
+              <a class="image" id="gallery-image-1">
+                <img src="images/Restaruant1.jpg" />
+              </a>
+              <a class="image" id="gallery-image-2">
+                <img src="images/Restaruant1.jpg" />
+              </a>
+              <a class="image" id="gallery-image-3">
+                <img src="images/Restaruant1.jpg" />
+              </a>
+              <a class="image" id="gallery-image-4">
+                <img src="images/Restaruant1.jpg" />
+              </a>
+              <a class="image" id="gallery-image-5">
+                <img src="images/Restaruant1.jpg" />
+              </a>
+              <a class="image" id="gallery-image-6">
+                <img src="images/Restaruant1.jpg" />
+              </a>
+              <a class="image" id="gallery-image-7">
+                <img src="images/Restaruant1.jpg" />
+              </a>
+              <a class="image" id="gallery-image-8">
+                <img src="images/Restaruant1.jpg" />
+              </a>
+              <a class="image" id="gallery-image-9">
+                <img src="images/Restaruant1.jpg" />
+              </a>
+            </div>
+          </div>
+        </div>-->
+      </div>
+
+      <div id="contact">
+        <div class="slide">
+          <div class="card-3">
+            <div class="card-img modified-card-img-1 form-outer"></div>
+            <div class="example-form_after contact-form" data-netlify="true">
+              <form method="POST" action="/">
+                <div class="form-group form">
+                  <input
+                    required
+                    class="form-control"
+                    type="text"
+                    name="email"
+                    id="email"
+                    autocomplete="off"
+                  />
+                  <label for="email" class="label">
+                    <span class="content">Email</span>
+                  </label>
+                </div>
+                <div class="form-group form">
+                  <input
+                    required
+                    class="form-control"
+                    type="text"
+                    name="text"
+                    id="text"
+                    autocomplete="off"
+                  />
+                  <label for="subject" class="label">
+                    <span class="content">Subject</span>
+                  </label>
+                </div>
+                <div class="form form-message">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="3"
+                    maxlength="180"
+                    autocomplete="off"
+                  ></textarea>
+                </div>
+                <!--<div class="form">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>-->
+                <div class="form">
+                  <button type="submit" class="submit-form-btn">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!--<form method="post" action="/" class="contact-form">
+              <div class="form form-group">
+                <input
+                  type="text"
+                  name="email"
+                  autocomplete="off"
+                  required
+                  class="form-control"
+                />
+                <label for="email" class="label">
+                  <span class="content">Email</span>
+                </label>
+              </div>
+              <div class="form form-group">
+                <input
+                  type="tel"
+                  name="tel"
+                  autocomplete="off"
+                  required
+                  class="form-control"
+                />
+                <label for="tel" class="label">
+                  <span class="content">Mobile</span>
+                </label>
+              </div>
+              <div class="form form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  autocomplete="off"
+                  required
+                  class="form-control"
+                />
+                <label for="subject" class="label">
+                  <span class="content">Subject</span>
+                </label>
+              </div>
+              <div class="form form-message form-group">
+                <textarea
+                  name="message"
+                  rows="3"
+                  maxlength="180"
+                  required
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="form">
+                <button type="submit" class="submit-form-btn">Submit</button>
+              </div>
+            </form>-->
+            <div class="card-content modified-card-content-2 form-outer">
+              <br />
+              <p class="card-theme modified-card-theme-1">Contact Us</p>
+              <br />
+              <p class="contact-form-msg">
+                We do want to hear from You.
+              </p>
+              <br />
+              <div class="contact-form-line">
+                <br />
+                <p class="card-p more-info">
+                  1 Toronto St. ON<br />JAKE LEE<br />leedongyeon516@gmail.com
+                </p>
+                <a class="contact-form-btn">Next</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div>
+      <div class="example-form_after">
+        <form method="post" action="/">
+          <div class="form-group">
+            <label>Email</label>
+            <input required class="form-control" type="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label>Story</label>
+            <textarea
+              required
+              class="form-control"
+              name="story"
+              rows="4"
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/restaurant.js"></script>
+    <script src="js/valid-form.js"></script>
+    <script>
+      const forms = document.querySelectorAll(".example-form_after form");
+      forms.forEach(function(form) {
+        ValidForm(form, { errorPlacement: "after" });
+      });
+    </script>
+  </body>
+  <footer>
+    <p>&copy 2019 DONGYEON LEE. ALL RIGHTS RESERVED</p>
+  </footer>
+</html>

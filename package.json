@@ -1,0 +1,24 @@
+{
+  "name": "restaurant_dylee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://leedongyeon516.github.io/JAKE_Restaurant",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leedongyeon516/JAKE_Restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leedongyeon516/JAKE_Restaurant/issues"
+  }
+}
