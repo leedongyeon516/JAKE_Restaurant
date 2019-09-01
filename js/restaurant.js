@@ -181,3 +181,18 @@ function imgFocused(e) {
 
   e.target.style.opacity = opacity;
 }
+
+const submitFormBtn = document.querySelector(".submit-form-btn");
+
+submitFormBtn.addEventListener("click", function() {
+  const thankYouBtn = document.querySelector(".view-btn");
+  const mainHeader = document.querySelector(".loader-main h2");
+
+  mainHeader.innerHTML = "Thank you.";
+  thankYouBtn.innerHTML = "Revisite the website";
+
+  setTimeout(
+    "window.location.href = 'https://leedongyeon516.github.io/JAKE_Restaurant/index.html';",
+    500
+  );
+});
