@@ -565,10 +565,12 @@ ul li a:hover::before {
 
 .contact-form {
   width: 0%;
+  transform: translateY(20%);
 }
 
 .contact-form.change {
   width: 100%;
+  transform: translateY(20%);
   transition: 1s ease-in-out;
 }
 
@@ -738,7 +740,7 @@ ul li a:hover::before {
 /**/
 .form {
   font-family: "Cinzel", serif;
-  height: 50px;
+  height: 55px;
   top: 20%;
   left: 50%;
   margin-bottom: 30px;

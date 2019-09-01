@@ -9,6 +9,18 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Cinzel|Rock+Salt|Satisfy|Shadows+Into+Light|Permanent+Marker|Poppins|Amatic+SC&display=swap"
     />
+    <script src="js/formValidation.js"></script>
+    <style media="screen">
+      .example-form_after .form-group .validation-error {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 0.7rem;
+        color: orange;
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+
     <title>JAKE's Restaurant</title>
   </head>
   <body>
@@ -280,37 +292,103 @@
         <div class="slide">
           <div class="card-3">
             <div class="card-img modified-card-img-1 form-outer"></div>
-            <form class="contact-form">
-              <div class="form">
-                <input type="text" name="email" autocomplete="off" required />
+            <div class="example-form_after contact-form" data-netlify="true">
+              <form method="POST" action="/">
+                <div class="form-group form">
+                  <input
+                    required
+                    class="form-control"
+                    type="text"
+                    name="email"
+                    id="email"
+                    autocomplete="off"
+                  />
+                  <label for="email" class="label">
+                    <span class="content">Email</span>
+                  </label>
+                </div>
+                <div class="form-group form">
+                  <input
+                    required
+                    class="form-control"
+                    type="text"
+                    name="text"
+                    id="text"
+                    autocomplete="off"
+                  />
+                  <label for="subject" class="label">
+                    <span class="content">Subject</span>
+                  </label>
+                </div>
+                <div class="form form-message">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="3"
+                    maxlength="180"
+                    autocomplete="off"
+                  ></textarea>
+                </div>
+                <!--<div class="form">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>-->
+                <div class="form">
+                  <button type="submit" class="submit-form-btn">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!--<form method="post" action="/" class="contact-form">
+              <div class="form form-group">
+                <input
+                  type="text"
+                  name="email"
+                  autocomplete="off"
+                  required
+                  class="form-control"
+                />
                 <label for="email" class="label">
                   <span class="content">Email</span>
                 </label>
               </div>
-              <div class="form">
-                <input type="tel" name="tel" autocomplete="off" required />
+              <div class="form form-group">
+                <input
+                  type="tel"
+                  name="tel"
+                  autocomplete="off"
+                  required
+                  class="form-control"
+                />
                 <label for="tel" class="label">
                   <span class="content">Mobile</span>
                 </label>
               </div>
-              <div class="form">
-                <input type="text" name="subject" autocomplete="off" required />
+              <div class="form form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  autocomplete="off"
+                  required
+                  class="form-control"
+                />
                 <label for="subject" class="label">
                   <span class="content">Subject</span>
                 </label>
               </div>
-              <div class="form form-message">
+              <div class="form form-message form-group">
                 <textarea
                   name="message"
                   rows="3"
                   maxlength="180"
                   required
+                  class="form-control"
                 ></textarea>
               </div>
-              <!--<div class="form">
+              <div class="form">
                 <button type="submit" class="submit-form-btn">Submit</button>
-              </div>-->
-            </form>
+              </div>
+            </form>-->
             <div class="card-content modified-card-content-2 form-outer">
               <br />
               <p class="card-theme modified-card-theme-1">Contact Us</p>
@@ -331,10 +409,37 @@
         </div>
       </div>
     </div>
+    <!--<div>
+      <div class="example-form_after">
+        <form method="post" action="/">
+          <div class="form-group">
+            <label>Email</label>
+            <input required class="form-control" type="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label>Story</label>
+            <textarea
+              required
+              class="form-control"
+              name="story"
+              rows="4"
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/restaurant.js"></script>
+    <script src="js/valid-form.js"></script>
+    <script>
+      const forms = document.querySelectorAll(".example-form_after form");
+      forms.forEach(function(form) {
+        ValidForm(form, { errorPlacement: "after" });
+      });
+    </script>
   </body>
   <footer>
     <p>&copy 2019 DONGYEON LEE. ALL RIGHTS RESERVED</p>
