@@ -501,6 +501,7 @@ ul li a:hover::before {
 }
 
 .gallery-card p {
+  font-size: 1rem;
   color: black;
   padding-top: 4rem;
 }
@@ -595,6 +596,7 @@ ul li a:hover::before {
   font-family: "Cinzel", serif;
   padding: 0.3rem 1.7rem;
   border: 1px #444 solid;
+  border-radius: 50px;
   display: inline-block;
   margin: 2rem 0 0;
   text-decoration: none;
@@ -618,6 +620,7 @@ ul li a:hover::before {
   padding: 0.3rem 1.7rem;
   border: none;
   border: #444 solid 1px;
+  border-radius: 50px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
   cursor: pointer;

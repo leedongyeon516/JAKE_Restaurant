@@ -191,8 +191,9 @@ submitFormBtn.addEventListener("click", function() {
   mainHeader.innerHTML = "Thank you.";
   thankYouBtn.innerHTML = "Revisite the website";
 
-  setTimeout(
+  window.location.reload();
+  /*setTimeout(
     "window.location.href = 'https://leedongyeon516.github.io/JAKE_Restaurant/index.html';",
     500
-  );
+  );*/
 });
