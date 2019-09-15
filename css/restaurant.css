@@ -866,19 +866,13 @@ footer {
   padding: 25px;
 }
 
-@media screen and (min-width: 1025px) {
-  .parallax {
-    background-attachment: fixed;
-  }
-}
-
 @media screen and (min-width: 834px) and (max-width: 1112px) {
   .parallax {
-    background-attachment: fixed;
+    background-attachment: unset;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen and (min-width: 1367px) {
   .parallax {
     background-attachment: fixed;
   }
@@ -1035,20 +1029,22 @@ footer {
   }
 }
 
-/**/
 @media screen and (max-width: 1200px) {
+  .slider-inner .content {
+    bottom: 0;
+    width: 240px;
+    padding: 30px;
+  }
+}
+
+/**/
+@media screen and (max-width: 1430px) {
   ul li a {
     display: none;
   }
 
   .menu-btn {
     display: block;
-  }
-
-  .slider-inner .content {
-    bottom: 0;
-    width: 240px;
-    padding: 30px;
   }
 }
 
