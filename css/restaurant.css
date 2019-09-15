@@ -866,7 +866,19 @@ footer {
   padding: 25px;
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 1025px) {
+  .parallax {
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 834px) and (max-width: 1112px) {
+  .parallax {
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
   .parallax {
     background-attachment: fixed;
   }
@@ -958,6 +970,10 @@ footer {
   .submit-form-btn {
     font-size: 0.8rem;
     padding: 0.2rem 1.3rem;
+  }
+
+  .modal-content {
+    margin: 8% auto;
   }
 }
 
