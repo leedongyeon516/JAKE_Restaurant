@@ -182,18 +182,59 @@ function imgFocused(e) {
   e.target.style.opacity = opacity;
 }
 
+const inputEmail = document.querySelector("#email");
+const inputSubject = document.querySelector("#text");
 const submitFormBtn = document.querySelector(".submit-form-btn");
+const modal = document.querySelector(".modal");
+const closeBtn = document.querySelector(".close-btn");
 
-submitFormBtn.addEventListener("click", function() {
-  const thankYouBtn = document.querySelector(".view-btn");
+contactFormBtn.addEventListener("click", function(e) {
+  setTimeout(function() {
+    if (
+      ($(inputEmail).is(":valid") || $(inputSubject).is(":valid")) &&
+      contactFormBtn.innerHTML === "Next"
+    ) {
+      modal.style.display = "block";
+    }
+  }, 1000);
+  /*const thankYouBtn = document.querySelector(".view-btn");
   const mainHeader = document.querySelector(".loader-main h2");
 
   mainHeader.innerHTML = "Thank you.";
   thankYouBtn.innerHTML = "Revisite the website";
 
   window.location.reload();
-  /*setTimeout(
+  setTimeout(
     "window.location.href = 'https://leedongyeon516.github.io/JAKE_Restaurant/index.html';",
     500
   );*/
 });
+
+closeBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", function(e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+});
+
+/*
+const coupon = document.querySelector(".coupon");
+const prefix = "LDY-";
+const couponArray = [
+  "NQ24919",
+  "NX80516",
+  "EQ74233",
+  "WQ22334",
+  "NC24356",
+  "XQ28863",
+  "QQ13466",
+  "SL89684",
+  "EK38279",
+  "DK11049"
+];
+const randomIndex = Math.floor(Math.random() * 10);
+
+coupon.innerHTML = prefix + couponArray[randomIndex];*/

@@ -824,6 +824,40 @@ textarea {
   transform: translateX(-50%);
 }
 
+.modal {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  width: 70%;
+  margin: 20% auto;
+  padding: 70px 50px;
+}
+
+.close-btn {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bolder;
+  letter-spacing: 0.45rem;
+  color: orange;
+  margin-right: -0.45rem;
+  float: right;
+}
+
+.close-btn:hover {
+  color: black;
+  cursor: pointer;
+}
+
 footer {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.7rem;
@@ -832,11 +866,13 @@ footer {
   padding: 25px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 860px) {
   .parallax {
     background-attachment: fixed;
   }
+}
 
+@media screen and (min-width: 769px) and (max-width: 1170px) {
   .parallax h2 {
     padding-top: 150px;
   }
