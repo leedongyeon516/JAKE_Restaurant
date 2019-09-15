@@ -184,6 +184,7 @@ function imgFocused(e) {
 
 const inputEmail = document.querySelector("#email");
 const inputSubject = document.querySelector("#text");
+const inputMessage = document.querySelector("#message");
 const submitFormBtn = document.querySelector(".submit-form-btn");
 const modal = document.querySelector(".modal");
 const closeBtn = document.querySelector(".close-btn");
@@ -191,7 +192,9 @@ const closeBtn = document.querySelector(".close-btn");
 contactFormBtn.addEventListener("click", function(e) {
   setTimeout(function() {
     if (
-      ($(inputEmail).is(":valid") || $(inputSubject).is(":valid")) &&
+      ($(inputEmail).is(":valid") ||
+        $(inputSubject).is(":valid") ||
+        $(inputMessage).is(":valid")) &&
       contactFormBtn.innerHTML === "Next"
     ) {
       modal.style.display = "block";
