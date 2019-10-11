@@ -134,6 +134,7 @@ body {
 
 ul {
   background: #fff;
+  border-bottom: black solid 1px;
   width: 100%;
   height: 57px;
   display: flex;
