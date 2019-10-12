@@ -136,10 +136,10 @@ contactFormBtn.addEventListener("click", openContactForm);
 function openContactForm() {
   if (contactFormBtn.innerHTML === "Next") {
     contactFormBtn.innerHTML = "Back";
-    contactFormMsg.innerHTML = "Send us your Message.";
+    contactFormMsg.innerHTML = "Send us your Message";
   } else {
     contactFormBtn.innerHTML = "Next";
-    contactFormMsg.innerHTML = "We do want to hear from You.";
+    contactFormMsg.innerHTML = "We do want to hear from You";
   }
 
   contactFormLine.classList.toggle("change");
