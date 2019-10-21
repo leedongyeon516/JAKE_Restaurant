@@ -134,7 +134,7 @@ body {
 
 ul {
   background: #fff;
-  border-bottom: black solid 1px;
+  border-bottom: #444 solid 2.5px;
   width: 100%;
   height: 57px;
   display: flex;
@@ -577,6 +577,10 @@ ul li a:hover::before {
   transition: 1s ease-in-out;
 }
 
+.contact-form-msg {
+  font-family: "Cinzel", serif;
+}
+
 .contact-form-line {
   width: 0px;
   height: 1px;
@@ -821,6 +825,10 @@ textarea {
   width: 50%;
   border: black solid 1px;
   transform: translateX(-50%);
+}
+
+.dot {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .modal {
