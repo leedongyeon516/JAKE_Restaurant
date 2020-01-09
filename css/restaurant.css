@@ -789,7 +789,6 @@ ul li a:hover::before {
   height: 100%;
   bottom: -1px;
   left: 0px;
-  border-bottom: 1px solid darkorange;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
 }
@@ -803,13 +802,20 @@ ul li a:hover::before {
 
 .form input:focus + .label .content,
 .form input:valid + .label .content {
-  color: darkorange;
   transform: translateY(-100%);
 }
 
 .form input:focus + .label::after,
 .form input:valid + .label::after {
   transform: translateX(0%);
+}
+
+.form input:focus + .label .content {
+  color: orange;
+}
+
+.form input:focus + .form label {
+  border-bottom: orange solid 1px;
 }
 
 textarea {
@@ -825,6 +831,10 @@ textarea {
   width: 50%;
   border: black solid 1px;
   transform: translateX(-50%);
+}
+
+.submit-form-btn:focus {
+  outline: none;
 }
 
 .dot {
@@ -1153,4 +1163,18 @@ footer {
     font-size: 0.7rem;
     padding: 0.3rem 1.2rem;
   }
+}
+
+/**/
+label {
+  width: 100%;
+}
+
+.input-field label {
+  font-size: 0.8rem;
+  -webkit-transform: translateY(-140%);
+  -moz-transform: translateY(-140%);
+  -ms-transform: translateY(-140%);
+  -o-transform: translateY(-140%);
+  transform: translateY(-140%);
 }

@@ -241,5 +241,3 @@ const couponArray = [
 const randomIndex = Math.floor(Math.random() * 10);
 
 coupon.innerHTML = prefix + couponArray[randomIndex];*/
-
-/**/
